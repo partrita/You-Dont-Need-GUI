@@ -3,6 +3,7 @@
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/you-dont-need/GUI)
 
 [中文版请看这里](./readme-zh_CN.md)
+[한국어 버전 보기](./readme-ko.md)
 
 <details>
 It's for noobs :)
