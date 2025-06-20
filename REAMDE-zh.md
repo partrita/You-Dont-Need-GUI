@@ -9,7 +9,7 @@
 
 图形用户操作界面（Graphical User Interfaces, GUI）对用户很友好，易于上手，没有命令行操作界面（Command-Line Interfaces, CLI）这么陡峭的学习曲线。
 
-![Xerox Star 8010 工作站](./Xerox_Star_8010_workstations.jpg)
+![Xerox Star 8010 工作站](./data/Xerox_Star_8010_workstations.jpg)
 
 但事实上，他们通常会消耗更多的计算资源，并且在自动化处理方面不如 CLI 那么容易且强大。
 
@@ -344,7 +344,7 @@ $ less apps/settings.py
 $ grep -i "Query" file.txt
 ```
 
-![grep](./grep.jpg)
+![grep](./data/grep.jpg)
 
 说明：`grep`能在文件中检索特定内容，图中是一些常见的配套命令行参数
 
@@ -416,7 +416,7 @@ $ whois www.google.com
 
 ## 技巧小贴士
 
-![CLI tips](./cli_tips.jpg)
+![CLI tips](./data/cli_tips.jpg)
 
 给 macOS 用户准备的，但是`bash`命令行环境应该也会有别的
 

@@ -2,7 +2,7 @@
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/you-dont-need/GUI)
 
-[中文版请看这里](./readme-zh_CN.md)
+[中文版请看这里](./README-zh.md), [한국어 버전](./README-ko.md)
 
 <details>
 It's for noobs :)
@@ -11,7 +11,7 @@ It's for noobs :)
 
 Graphical user interfaces are super friendly to computer users. They were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
 
-![Xerox Star 8010 workstations](./Xerox_Star_8010_workstations.jpg)
+![Xerox Star 8010 workstations](./data/Xerox_Stas_8010_workstations.jpg)
 
 However, they often require more resources, are less powerful and hard to automate via scripting.
 
@@ -459,7 +459,42 @@ $ less apps/settings.py
 $ grep -i "Query" file.txt
 ```
 
-![grep](./grep.jpg)
+![grep](./data/grep.jpg)
+
+* grep lets you search files for text
+    * `$ grep bananas foo.txt`
+    * Here are some of my favourite grep command line arguments!
+
+* `-E` aka `egrep`
+    * Use if you want regexps like ".+" to work. otherwise you need to use "\.+"
+
+* `-r` recursive!
+    * Search all the files in a directory.
+
+* `-v` invert match:
+    * find all lines that don't match
+
+* `-O` only print the matching part of the line (not the whole line)
+
+* `-i` case insensitive
+
+* `-l` only show the filenames of the files that matched
+
+* `-a` search binaries:
+    * treat binary data like it's text instead of ignoring it!
+
+* `-A` Show context for your search.
+    * `$ grep -A 3 foo`
+    * will show 3 lines of context after a match
+
+* `-F` don't treat the match string as a regex
+    * eg `$ grep -F ...`
+
+* grep alternatives
+    * `ack`
+    * `ag`
+    * `ripgrep`
+    * (better for searching code!)
 
 [Go to table of contents 🔼](#quick-links)
 
@@ -612,7 +647,18 @@ $ whois www.google.com
 
 ## Quick tips
 
-![CLI tips](./cli_tips.jpg)
+```bash
+$ !! # run the last command executed
+$ sudo !! # run the last command as root
+$ !<word> # run last command starting with a specific word
+$ !<word>:p # ^ list, but don't run that last command
+$ <space>command # execute a command w/out saving in history
+$ echo "ls -l" | at midnight # execute command at given time
+$ caffeinate -u -t 3600 # stop your mac from sleeping for 1h
+$ ls -lhS # sort files by size in a directory
+$ qlmanage -p <file> # QuickLook preview from command-line
+$ top -o vsize # why is my mac slow?
+```
 
 [Go to table of contents 🔼](#quick-links)
 
